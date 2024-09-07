@@ -1,4 +1,22 @@
 
+# Python bindings with shared memory
+
+```
+!git clone https://github.com/jpmag7/NGT.git
+%cd NGT
+!mkdir build
+%cd build
+!cmake -DNGT_SHARED_MEMORY_ALLOCATOR=ON ..
+!make
+!make install
+!ldconfig /usr/local/lib
+%cd /kaggle/working/NGT/python
+!python3 setup.py sdist
+!pip3 install dist/ngt-2.2.4.tar.gz
+%cd /kaggle/working
+```
+
+
 # python NGT
 
 [日本語](README-jp.md)
