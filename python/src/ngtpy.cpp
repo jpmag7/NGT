@@ -18,11 +18,11 @@
 #include	"NGT/GraphOptimizer.h"
 #include	"NGT/version_defs.h"
 #include	"NGT/NGTQ/Quantizer.h"
-#ifdef NGTQ_QBG
+
 #include	"NGT/NGTQ/QuantizedBlobGraph.h"
-#else
+
 #include	"NGT/NGTQ/QuantizedGraph.h"
-#endif
+
 
 #include	<pybind11/pybind11.h>
 #include	<pybind11/stl.h>
