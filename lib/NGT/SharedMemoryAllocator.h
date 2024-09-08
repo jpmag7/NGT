@@ -111,7 +111,7 @@ class SharedMemoryAllocator {
     if (msize == 0) {
       msize = NGT_SHARED_MEMORY_MAX_SIZE;
     }
-    msize = 1;
+    msize = 100;
     size_t bsize = msize * 1048576 / sysconf(_SC_PAGESIZE) + 1; // 1048576=1M
     uint64_t size = bsize * sysconf(_SC_PAGESIZE);
     MemoryManager::init_option_st option;
